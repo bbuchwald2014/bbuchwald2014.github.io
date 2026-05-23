@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben B</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid #eee;
+    }
+    header .logo { font-size: 18px; font-weight: 600; }
+    nav a {
+      margin-left: 1.5rem;
+      font-size: 14px;
+      color: #555;
+      text-decoration: none;
+    }
+    nav a:hover { color: #111; }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 5rem 2rem;
+      max-width: 680px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #111;
+    }
+    .btn:hover { background: #f5f5f5; }
+
+    /* ── Sections ── */
+    section {
+      padding: 3rem 2rem;
+      border-top: 1px solid #eee;
+    }
+    section h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Project cards ── */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+    }
+    .card .tag {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      background: #eef4ff;
+      color: #2563eb;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    .card h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .card p  { font-size: 13px; color: #666; }
+
+    /* ── About ── */
+    .about p { max-width: 640px; color: #444; }
+
+    /* ── Contact ── */
+    .contact a { color: #2563eb; }
+
+    /* ── Footer ── */
+    footer {
+      padding: 2rem;
+      font-size: 13px;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">Jane Smith</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Designer &amp; developer<br>based in New York</h1>
+    <p>I build clean, thoughtful products for the web.<br>
+       Currently open to freelance projects and full-time roles.</p>
+    <a href="#contact" class="btn">Get in touch →</a>
+  </div>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+
+      <div class="card">
+        <span class="tag">Web app</span>
+        <h3>Budget Tracker</h3>
+        <p>A simple tool to track monthly expenses with charts and CSV export.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">Website</span>
+        <h3>Local Bakery Site</h3>
+        <p>Redesigned and built a new site for a neighbourhood bakery. Bookings up 40%.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">Open source</span>
+        <h3>CSS Reset</h3>
+        <p>A minimal CSS reset I use across all projects, published on GitHub.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>I'm a self-taught developer with 5 years of experience building websites and web apps.
+       I care a lot about simple, readable code and good design. When I'm not coding, I'm usually
+       hiking or reading.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Best way to reach me: <a href="mailto:jane@example.com">jane@example.com</a></p>
+  </section>
+
+  <footer>© 2026 Jane Smith</footer>
+
+</body>
+</html>
