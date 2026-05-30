@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ben B</title>
+  <title>Bens Biophotonics -- Under Construction</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -31,21 +31,33 @@
     }
     nav a:hover { color: #111; }
 
-    /* ── Hero ── */
-    .hero {
-      padding: 5rem 2rem;
-      max-width: 680px;
+    /* ── top banner ── */
+    /*CSS 'properties' for namespace(class) <top_banner> of form:  -- .class property {} -- in which you set
+      to style different elements */
+    .top_banner {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      max-width: fit-content;
+     /*ax-width: max-content;*/
     }
-    .hero h1 {
+    .top_banner h1 {
       font-size: 2.5rem;
       font-weight: 600;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
-    .hero p {
+    .top_banner p {
       font-size: 1.1rem;
       color: #555;
       margin-bottom: 1.5rem;
+    }
+    .top_banner .photo img {
+
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      /*image-orientation: rotate: 100deg;*/
+
     }
     .btn {
       display: inline-block;
@@ -69,7 +81,7 @@
       margin-bottom: 1.5rem;
     }
 
-    /* ── Project cards ── */
+    /* ── Project cards for relevant subjects ── */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -79,11 +91,13 @@
       border: 1px solid #eee;
       border-radius: 12px;
       padding: 1rem 1.25rem;
+    
+      
     }
     .card .tag {
       display: inline-block;
-      font-size: 11px;
-      padding: 2px 8px;
+      font-size: 9px;
+      padding: 1px 2px;
       background: #eef4ff;
       color: #2563eb;
       border-radius: 6px;
@@ -110,7 +124,7 @@
 <body>
 
   <header>
-    <span class="logo">Jane Smith</span>
+    <span class="logo">Bens Biophotonics</span>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -118,11 +132,15 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <h1>Designer &amp; developer<br>based in New York</h1>
-    <p>I build clean, thoughtful products for the web.<br>
-       Currently open to freelance projects and full-time roles.</p>
-    <a href="#contact" class="btn">Get in touch →</a>
+  <div class="top_banner">
+    <h1>Welcome</h1>
+    <p>Where art meets science and science meets computer science.<br>
+       .</p>
+    <span class = "photo"><img src = "fluoresence_hyper001_unstained.png" alt = "fluor"/><span>
+    <!--span is inline-level element whereas <div> is a block level element, so the image will be inline with the text.*/
+      /*If you want the image to be on a separate line, you can use a <div> instead of a <span>.*/ -->
+
+    <a href="real_web_personal_statement.html" class="btn">Type of work looking for →</a>
   </div>
 
   <section id="projects">
@@ -130,20 +148,21 @@
     <div class="cards">
 
       <div class="card">
-        <span class="tag">Web app</span>
-        <h3>Budget Tracker</h3>
+        <span class="tag">Computational Biology</span>
+        <span class="tag">Computational Biology</span>
+        <h3>Cancer Prediction</h3>
         <p>A simple tool to track monthly expenses with charts and CSV export.</p>
       </div>
 
       <div class="card">
         <span class="tag">Website</span>
-        <h3>Local Bakery Site</h3>
+        <h3>RGB TO HSI</h3>
         <p>Redesigned and built a new site for a neighbourhood bakery. Bookings up 40%.</p>
       </div>
 
       <div class="card">
         <span class="tag">Open source</span>
-        <h3>CSS Reset</h3>
+        <h3>Methylene Blue Analogue Imaging</h3>
         <p>A minimal CSS reset I use across all projects, published on GitHub.</p>
       </div>
 
@@ -152,17 +171,17 @@
 
   <section id="about" class="about">
     <h2>About</h2>
-    <p>I'm a self-taught developer with 5 years of experience building websites and web apps.
-       I care a lot about simple, readable code and good design. When I'm not coding, I'm usually
-       hiking or reading.</p>
+    <p>Graduate student &amp; and aspiring researcher based in Florida</p>
+    Masters degree along way expected date: July 2026
   </section>
 
   <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Best way to reach me: <a href="mailto:jane@example.com">jane@example.com</a></p>
+    <p>Best way to reach me: <a href = "mailto:buchwaldb1@outlook.com">
+          buchwaldb1@outlook.com</a></p>
   </section>
 
-  <footer>© 2026 Jane Smith</footer>
+  <footer>© 2026 Benjamin Buchwald</footer>
 
 </body>
 </html>
