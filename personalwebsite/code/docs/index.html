@@ -35,8 +35,8 @@
     /*CSS 'properties' for namespace(class) <top_banner> of form:  -- .class property {} -- in which you set
       to style different elements */
     .top_banner {
-      padding-top: 2rem;
-      padding-bottom: 4rem;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
       max-width: fit-content;
      /*ax-width: max-content;*/
     }
@@ -53,12 +53,20 @@
     }
     .top_banner .photo img {
 
+      opacity: 1;
+      transition-property: opacity;
+      transition-duration: 3s;
+      transition-timing-function: ease-in-out; 
       width: 100%;
       height: auto;
       border-radius: 12px;
       /*image-orientation: rotate: 100deg;*/
-
     }
+    .top_banner .photo:hover,
+    .top_banner .photo:focus-visible {
+      opacity: 0.2;
+    }
+    
     .btn {
       display: inline-block;
       padding: 0.6rem 1.2rem;
@@ -136,7 +144,7 @@
     <h1>Welcome</h1>
     <p>Where art meets science and science meets computer science.<br>
        .</p>
-    <span class = "photo"><img src = "fluoresence_hyper001_unstained.png" alt = "fluor"/><span>
+    <span class = "photo"><img src = "../../photos/fluoresence_hyper001_unstained.png" alt = "fluorescence"/><span>
     <!--span is inline-level element whereas <div> is a block level element, so the image will be inline with the text.*/
       /*If you want the image to be on a separate line, you can use a <div> instead of a <span>.*/ -->
 
@@ -173,6 +181,7 @@
     <h2>About</h2>
     <p>Graduate student &amp; and aspiring researcher based in Florida</p>
     Masters degree along way expected date: July 2026
+    <p>All images and were taken by the researcher.</p>
   </section>
 
   <section id="contact" class="contact">
@@ -185,3 +194,5 @@
 
 </body>
 </html>
+
+
