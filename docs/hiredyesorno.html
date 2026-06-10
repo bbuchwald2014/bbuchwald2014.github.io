@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <!--<div class = "GLOBAL_LIKE_HIRING_STATUS">
+        attribute = ""  empty string as same as true, if no <attribute> available then default false in HTML
+    </div>
+</head>
+    -->
+<style>
+
+    .text {
+        font-size: 100px;
+        font-weight: 500px;
+        padding-top: 2rem;
+        color-scheme: dark;
+        
+        display: inline-block;
+    }
+
+    .text .hired, .text .not_hired{
+        font-size: inherit; font-weight: inherit; padding-top: inherit; color-scheme: inherit;
+        display: none; /*should check if <display> property is inherited; yes sets out flow for children elements*/
+            /*Note: When a display property is specified with only an outer value 
+            (e.g., display: block or display: inline), the inner value defaults to flow 
+            (e.g., display: block flow and display: inline flow).
+            */
+    }
+
+    .text .hired {
+        color: green;
+    }
+    .text .not_hired{
+        color: red;
+    }
+    
+    .text[data-working = "true"]  .hired {
+        display: inline; /*Note: Modifying the HTML attribute value will trigger CSS rules to apply. It will display custom inline property value
+                            for the <hired> class here in a given element.*/
+    }
+    .text[data-working = "false"] .not_hired {
+        display: inline;
+    }
+
+</style>
+<head>
+    <title>AM I HIRED YET?</title>
+</head>
+
+<body>
+    <div class = "text " data-working = "false">
+        <span class = "hired">HIRED</span>
+        <span class = "not_hired">NOT HIRED</span>
+
+    </div>
+</body>
+
+</html>
